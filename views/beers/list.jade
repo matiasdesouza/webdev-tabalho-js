@@ -1,0 +1,21 @@
+div.col-sm-9.col-sm-offset-3
+  h3 <b>Listagem de cervejas</b>
+  
+table.table.table-responsive.table-striped
+  thead
+    tr
+      th Nome    
+      th Preço
+      th Descrição    
+      th 
+  tbody
+    tr(data-ng-repeat='beer in beers')
+      td 
+        a(href='/beers/{{ beer._id }}')
+          | {{ beer.name }}
+      td
+        {{ beer.price }}
+      td
+        {{ beer.description }}
+      td
+        button.btn.btn-danger(data-ng-click='deletar(beer)') DELETAR

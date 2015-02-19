@@ -1,0 +1,23 @@
+extends layout
+
+block body
+  div(ng-controller='AppCtrl')
+    h1 Beer (MEAN)
+    nav.navbar.navbar-inverse(role='navigation')    
+      ul.nav.navbar-nav
+        li.active
+          a(role='menuitem', href='beers')<b>Lista de Beers</b>
+        li.active
+          a(role='menuitem', href='beers/create')<b>Cadastrar Beer</b>
+        li.active
+          a(role='menuitem', href='breweries')<b>Lista de Breweries</b>
+        li.active
+          a(role='menuitem', href='breweries/create')<b>Cadastrar Brewerie</b>          
+    div(ng-view)
+
+  script(src='js/lib/angular/angular.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')

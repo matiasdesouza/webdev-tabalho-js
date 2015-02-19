@@ -1,0 +1,24 @@
+div.col-sm-9.col-sm-offset-3
+  h3 <b>Cadastro de cervejaria</b>
+div.col-sm-9.col-sm-offset-3  
+  alert.alert-warning(role='alert') {{ msg }}
+
+form.form-horizontal.form(id="form-brewerie-cadastro")
+  div.form-group
+    label.control-label.col-sm-1 Nome
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', data-ng-model='brewerie.name')
+  div.form-group
+    label.control-label.col-sm-1 Cidade
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', data-ng-model='brewerie.city')
+  div.form-group
+    label.control-label.col-sm-1 Estado
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', data-ng-model='brewerie.state')
+  div.form-group
+    label.control-label.col-sm-1 País
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', data-ng-model='brewerie.country')
+  div.col-sm2.col-sm-offset-1
+    button.btn.btn-primary(data-ng-click='create(brewerie)') SALVAR

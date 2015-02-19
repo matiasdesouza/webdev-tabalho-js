@@ -1,0 +1,25 @@
+div.col-sm-9.col-sm-offset-3
+  h3 <b>Dados da cerveja</b>
+form.form-horizontal.form(id="form-beer-visualizacao")
+  div.form-group
+    label.control-label.col-sm-1 Nome
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', readonly='true', data-ng-model='beer.name')
+  div.form-group
+    label.control-label.col-sm-1 Categoria
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', readonly='true', data-ng-model='beer.category')
+  div.form-group
+    label.control-label.col-sm-1 Preço
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', readonly='true', data-ng-model='beer.price')
+  div.form-group
+    label.control-label.col-sm-1 Alcohol
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', readonly='true', data-ng-model='beer.alcohol')
+  div.form-group
+    label.control-label.col-sm-1 Descrição
+    div.col-sm-10.col-lg-6
+      input.form-control(type='text', readonly='true', data-ng-model='beer.description')
+  div.col-sm2.col-sm-offset-1
+    a(href='/beers/{{ beer._id }}/edit') <b>EDITAR</b>
